@@ -633,8 +633,11 @@
       }
       .paper{
         width:100%;
+        height:392px;
         min-height:392px;
         padding:18px 14px 18px;
+        overflow-y:auto;
+        -webkit-overflow-scrolling:touch;
       }
       .fortuneHead .sub{ font-size:28px; }
       .fortuneHead .name{ font-size:18px; }
@@ -718,7 +721,7 @@
               </ul>
 
               <div class="message" id="fortuneMessage">
-                記念仕様の印刷機が動き出すと、ここに今日の運勢が表れます。
+                
               </div>
 
             </article>
@@ -1342,7 +1345,7 @@
       el.fortunePaper.textContent = '—';
       el.fortuneColor.textContent = '—';
       el.fortunePoint.textContent = '—';
-      el.fortuneMessage.textContent = '記念仕様の印刷機が動き出すと、ここに今日の運勢が表れます。';
+      el.fortuneMessage.textContent = '';
       el.printBtn.disabled = false;
       el.reprintBtn.disabled = true;
       el.printBtn.style.opacity = '1';
